@@ -1,0 +1,89 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("/images/bg-desktop.svg");
+  font-family: "Open Sans", sans-serif;
+  padding: 25px 75px;
+  color: white;
+}
+svg {
+  fill: white;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+p {
+  line-height: 1.5;
+  margin: 50px 0;
+}
+button {
+  padding: 15px 50px;
+  max-width: min-content;
+  border-radius: 50px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  box-shadow: 0 5px 15px hsl(257, 53%, 31%);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+}
+.graphic {
+  max-width: 50vw;
+}
+
+svg:hover {
+  fill: hsl(300, 69%, 71%);
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 920px) {
+  body {
+    padding: none;
+  }
+  .graphicColumn {
+    max-width: max-content;
+  }
+  .graphic {
+    max-width: fit-content;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
