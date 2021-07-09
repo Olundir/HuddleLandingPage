@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 25px 75px;
   color: white;
+  height: 100vh;
 }
 svg {
   fill: white;
