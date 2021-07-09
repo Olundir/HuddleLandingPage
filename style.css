@@ -74,16 +74,24 @@ button:hover {
 
 @media (max-width: 920px) {
   body {
-    padding: none;
-  }
-  .graphicColumn {
-    max-width: max-content;
+    padding: 10px;
   }
   .graphic {
-    max-width: fit-content;
+    max-width: 100%;
   }
   main {
     display: grid;
     grid-template-columns: auto;
+  }
+  .infoColumn {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  nav {
+    align-items: center;
+  }
+  footer {
+    flex-direction: column-reverse;
   }
 }
